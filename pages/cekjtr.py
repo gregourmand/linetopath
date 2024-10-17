@@ -53,10 +53,6 @@ if 'authentication_status' in st.session_state and st.session_state['authenticat
     st.write('Pastikan nama kolom : GARDU, SEGMENT JTR, dan NO TIANG')
     st.write('Pastikan terdapat nama kolom. Jika tidak ada bisa dibuat col1, col2, dst')
     st.write('Pastikan isi dari 3 kolom tersebut sesuai dengan contoh format dibawah ini')
-    st.write('Contoh Format CSV yang di upload : ')
-
-    df_ex = pd.read_csv('JTR 44340 23092024.csv')
-    st.dataframe(df_ex[:5])
 
     uploaded_file = st.file_uploader("Choose a file")
     if uploaded_file is not None:
