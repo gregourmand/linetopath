@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    MappingUP3Bima:
+      email: tes1t@gmail.com
+      name: Mapping UP3 Bima
+      password: $2b$12$GBLMpJC1jWJnW.Cpbjpqr.DiBrZjH33O1KtrfMmJlJiMyeFoRJc7u # To be replaced with hashed password
+    Guest:
+      email: test2@gmail.com
+      name: Guest
+      password: $2b$12$Clh442PNy9iyZS8iK0Bxa.96C9sWDMHlAzljiW4mhsUC8lrMyweJS # To be replaced with hashed password
+cookie:
+  expiry_days: 1
+  key: random_signature_key # Must be string
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - test@gmail.com
