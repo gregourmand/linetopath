@@ -60,7 +60,7 @@ if 'authentication_status' in st.session_state and st.session_state['authenticat
         # bytes_data = uploaded_file.read()
         # st.write("filename:", uploaded_file.name)
         uploaded_file.seek(0)
-        df = pd.read_csv(uploaded_file, low_memory=False)
+        df = pd.read_csv(uploaded_file, sep=';', low_memory=False)
 
         df["Test"] = 1
 
@@ -112,4 +112,5 @@ if 'authentication_status' in st.session_state and st.session_state['authenticat
         st.write(coba)
 
 else:
+
     authenticator.login()
